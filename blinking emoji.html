@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Hello, World!</title>
+  <style>
+      @keyframes fur{
+        0%{width:40px; height:0px; border:solid white 0px;}
+        25%{width:40px; height:0px; border:solid white 0px;}
+        50%{width:40px; height:20px; border:solid white 0px;}
+        100%{width:40px; height:40px; border:solid white 0px;}
+        
+        
+      }
+      @keyframes fgr{
+        0%{width:200px}
+        100%{width:0px}
+      }
+      .gur{
+        position:fixed;
+        width:140px;
+        height:140px;
+        border:solid black 0px;
+        border-radius:100px;
+        background-color:yellow;
+        
+        
+      }
+      #fir{
+        width:40px;
+        height:80px;
+        background-color:#101010;
+        border:solid white 0px;
+        border-radius:30px;
+        animation-duration:0.8s;
+        animation-iteration-count:5;
+        position:fixed;
+        left:9%;
+        top:13%;
+         }
+      .char{
+        width:40px;
+        height:80px;
+        background-color:#101010;
+        border:solid white 0px;
+        border-radius:30px;
+        animation-name:fur;
+        animation-duration:0.8s;
+        animation-iteration-count:5;
+        position:fixed;
+        left:23%;
+        top:13%;
+      }
+      .swc{
+        width:40px;
+        height:80px;
+      }
+  
+  </style>
+</head>
+<body>
+  <p class="gur"></p>
+  ⠀⠀⠀⠀<p id="fir" style="animation-name:fur;"><p class="char"></p>
+  </p>
+  <h1 id="hu" onclick="rut()" style="padding-top:100px"> rotate</h1>
+  <h1 class="thw"></h1>
+</body>
+</html>
+<script>
+var tome = 0;
+function rut(){
+  tome+=1
+  if(tome%2!=0){
+      document.getElementById("fir").style.animationName="fgr"
+  }
+  
+  if(tome%2==0){
+    document.getElementById("fir").style.animationName="fur"
+  }
+ 
+
+  
+}
+
+
+</script>
